@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="scrollCue.css" />
+        <script src="scrollCue.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="portfolio.css">
+        <script src="portfolio.js"></script>
+    </head>
+
+    <body class="header">
+        <div class="header">
+            <h1 class="slide-left">J E N N A </h1>
+            <h3 class="slide-left">P H I L L I P S</h3>
+        </div>
+
+        <!-- Images used to open the lightbox -->
+        <div class="row">
+            <div class="column">
+                <img class="img" src="grain elevator.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img class="img" src="sunflowers.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img class="img" src="bluemountain1.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img class="img" src="bluemountain2.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+        </div>
+        
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+        
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="grain elevator.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="sunflowers.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="bluemountain1.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="bluemountain2.jpg" style="width:100%">
+            </div>
+        
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+        
+            <!-- Thumbnail image controls -->
+            <div class="column">
+                <img class="demo" src="grain elevator.jpg" onclick="currentSlide(1)" alt="Nature">
+            </div>
+        
+            <div class="column">
+                <img class="demo" src="sunflowers.jpg" onclick="currentSlide(2)" alt="Snow">
+            </div>
+        
+            <div class="column">
+                <img class="demo" src="bluemountain1.jpg" onclick="currentSlide(3)" alt="Mountains">
+            </div>
+        
+            <div class="column">
+                <img class="demo" src="bluemountain2.jpg" onclick="currentSlide(4)" alt="Lights">
+            </div>
+            </div>
+        </div>
+
+        <!--original images-->
+        <div>
+            <div>
+                <div class="card" data-cues="fadeIn">
+                    <h2>R O W I N G</h2>
+                    <video width="50%" height="50%" autoplay controls muted>
+                        <source src="david anderson melt.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video width="50%" height="50%" autoplay controls muted>
+                        <source src="fall rowing_final.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>  
+            <div>
+                <div class="box2" data-cues="fadeIn">
+                    <h2 class="floating">R E A L </h2>
+                    <h2 class="floating">E S T A T E</h2>
+                    <video width="50%" height="50%" autoplay controls muted>
+                        <source src="fall city property_4.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>    
+        </div>
+
+        <div class="footer">
+            <h4>jennajp08@gmail.com</h4>
+        </div>
+    </body>
+</html>
